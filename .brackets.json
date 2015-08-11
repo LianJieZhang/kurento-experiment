@@ -1,0 +1,9 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/projects/kurento/kurento-tutorial-js/kurento-webrtc-loopback-generator/index.js",
+        "C:/projects/kurento/kurentoDemoApp/js/index.js",
+        "C:/projects/kurento/kurentoDemoApp/server/server.js",
+        "C:/projects/kurento/kurento-tutorial-js/kurento-recorder-screen/server.js",
+        "C:/projects/kurento/kurento-tutorial-js/kurento-recorder-screen/static/index.js"
+    ]
+}

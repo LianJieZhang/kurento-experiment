@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/ekko-lightbox/dist/ekko-lightbox.min.css">
+	<link rel="stylesheet" href="css/index.css">
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+	<script src="bower_components/adapter.js/adapter.js"></script>
+
+	<script type="text/javascript"
+    src="http://builds.kurento.org/dev/master/latest/js/kurento-client.min.js"></script>
+	<script src="bower_components/kurento-utils/js/kurento-utils.min.js"></script>
+	<script src="bower_components/kurento-jsonrpc/js/kurento-jsonrpc.js"></script>
+
+	<script src="/bower_components/socket.io-client/socket.io.js"></script>
+
+	<script src="js/index.js"></script>
+
+</head>
+
+<body>
+	<div id="registerContainer">
+		<div class="row">
+			<div class="col-md-1">
+				<label class="control-label" for="name">Name</label>
+			</div>
+			<div class="col-md-8">
+				<input id="name" class="form-control" type="text" />
+			</div>
+			<div class="col-md-3">
+				<a id="register" href="#" class="btn btn-primary">Register</a>
+			</div>
+		</div>
+	</div>
+	<div id="videoContainer">
+		<div class="row">
+			<div class="col-md-2">
+				<label class="control-label" for="call">Call him:</label>
+			</div>
+			<div class="col-md-8">
+				<input id="callName" class="form-control" type="text" />
+			</div>
+			<div class="col-md-2">
+				<a id="call" href="#" class="btn btn-primary">Call</a>
+				<a id="stop" href="#" class="btn btn-primary">mirror</a>
+				<a id="nstop" href="#" class="btn btn-primary">!mirror</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+			<video id="videoInput" autoplay width="640px" height="480px"></video>
+			<video id="videoOutput1" autoplay width="640px" height="480px"></video>
+			<video id="videoOutput2" autoplay width="640px" height="480px"></video>
+			<video id="videoOutput3" autoplay width="640px" height="480px"></video>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

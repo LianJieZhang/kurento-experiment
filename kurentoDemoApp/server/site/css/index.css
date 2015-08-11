@@ -1,0 +1,8 @@
+#registerContainer{
+	width: 500px;
+	margin-top: 20px;
+}
+#videoContainer video{
+	display: inline-block;
+	background-color: aqua;
+}
